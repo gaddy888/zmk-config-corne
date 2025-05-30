@@ -177,6 +177,16 @@
             bindings = <&kp CARET>;
             key-positions = <6 18>;
         };
+
+        LeftBrace {
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <18 19>;
+        };
+
+        RightBrace {
+            bindings = <&kp RIGHT_BRACE>;
+            key-positions = <30 31>;
+        };
     };
 
     //
