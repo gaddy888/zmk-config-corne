@@ -16,13 +16,13 @@
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
             tapping-term-ms = <300>;
-            quick_tap_ms = <75>;
+            quick_tap_ms = <175>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
 
             quick-tap-ms = <180>;
             global-quick-tap;
-            require-prior-idle-ms = <100>;
+            require-prior-idle-ms = <200>;
         };
 
         para: para {
