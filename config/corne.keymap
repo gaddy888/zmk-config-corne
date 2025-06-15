@@ -204,6 +204,16 @@
             bindings = <&tog 4>;
             key-positions = <35 40>;
         };
+
+        pipe {
+            bindings = <&kp PIPE>;
+            key-positions = <21 33>;
+        };
+
+        backslash {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <22 34>;
+        };
     };
 
     //
