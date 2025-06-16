@@ -216,7 +216,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        DEF {
+        Base {
             display-name = "Base";
 
             // -----------------------------------------------------------------------------------------
@@ -226,10 +226,10 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&kp GRAVE       &kp Q               &kp W           &kp E           &kp R             &kp T        &kp Y    &kp U              &kp I            &kp O            &kp P                   &kp BACKSPACE
-&kp TAB         &hm LEFT_CONTROL A  &hm LEFT_ALT S  &hm LEFT_GUI D  &hm LEFT_SHIFT F  &kp G        &kp H    &hm RIGHT_SHIFT J  &hm K RIGHT_GUI  &hm RIGHT_ALT L  &hm RIGHT_CONTROL SEMI  &kp SQT
-&kp LEFT_SHIFT  &kp Z               &kp X           &kp C           &kp V             &kp B        &kp N    &kp M              &kp COMMA        &kp DOT          &kp FSLH                &kp RSHFT
-                                                    &kp LGUI        &mo 1             &kp SPACE    &kp RET  &lt 2 TAB          &kp LEFT_ALT
+&kp GRAVE       &kp Q               &kp W           &kp E           &kp R  &kp T        &kp Y    &kp U      &kp I            &kp O            &kp P                   &kp BACKSPACE
+&kp TAB         &hm LEFT_CONTROL A  &hm LEFT_ALT S  &hm LEFT_GUI D  &kp F  &kp G        &kp H    &kp J      &hm K RIGHT_GUI  &hm RIGHT_ALT L  &hm RIGHT_CONTROL SEMI  &kp SQT
+&kp LEFT_SHIFT  &kp Z               &kp X           &kp C           &kp V  &kp B        &kp N    &kp M      &kp COMMA        &kp DOT          &kp FSLH                &kp RSHFT
+                                                    &kp LGUI        &mo 1  &kp SPACE    &kp RET  &lt 2 TAB  &kp LEFT_ALT
             >;
         };
 
@@ -260,9 +260,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp EXCL          &kp AT          &kp HASH        &kp DLLR         &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LEFT_PARENTHESIS  &kp RPAR  &trans
-&trans  &kp LEFT_CONTROL  &kp LEFT_ALT    &kp UP_ARROW    &trans           &kp GRAVE    &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT              &kp BSLH  &trans
-&trans  &trans            &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp TILDE    &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC              &kp PIPE  &trans
+&trans  &kp EXCL          &kp AT          &kp HASH        &kp DLLR         &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK      &kp LEFT_PARENTHESIS  &kp RPAR           &trans
+&trans  &kp LEFT_CONTROL  &kp LEFT_ALT    &kp UP_ARROW    &trans           &kp GRAVE    &kp MINUS  &kp EQUAL  &kp SLASH      &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &trans
+&trans  &trans            &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp TILDE    &kp UNDER  &kp PLUS   &kp BACKSLASH  &kp LEFT_BRACE        &kp RIGHT_BRACE    &trans
                                           &kp LGUI        &trans           &kp SPACE    &kp RET    &trans     &trans
             >;
         };
