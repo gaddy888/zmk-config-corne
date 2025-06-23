@@ -336,10 +336,10 @@
 
         sticky_mods {
             bindings = <
-&trans          &trans     &trans    &trans    &trans  &trans    &trans  &trans    &trans        &trans     &trans  &trans
-&trans          &sk LCTRL  &sk LALT  &sk LGUI  &trans  &trans    &trans  &trans    &kp UP_ARROW  &trans     &trans  &trans
-&shift_tolayer  &sk GLOBE  &trans    &trans    &trans  &trans    &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &trans  &trans
-                                     &trans    &trans  &trans    &trans  &trans    &trans
+&trans          &kp C_BRI_DEC  &kp C_BRI_INC  &kp C_REWIND  &kp K_PLAY_PAUSE  &kp C_FAST_FORWARD    &kp C_MUTE  &kp C_VOL_DN  &kp C_MUTE    &kp C_VOLUME_UP  &trans  &trans
+&trans          &sk LCTRL      &sk LALT       &sk LGUI      &trans            &trans                &trans      &trans        &kp UP_ARROW  &trans           &trans  &trans
+&shift_tolayer  &sk GLOBE      &trans         &trans        &trans            &trans                &trans      &kp LEFT      &kp DOWN      &kp RIGHT        &trans  &trans
+                                              &trans        &trans            &trans                &trans      &trans        &trans
             >;
         };
     };
