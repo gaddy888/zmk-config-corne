@@ -272,6 +272,11 @@
             bindings = <&tog 5>;
             key-positions = <24 37>;
         };
+
+        to_mouse_num {
+            bindings = <&mo 4>;
+            key-positions = <23 35>;
+        };
     };
 
     //
