@@ -72,7 +72,7 @@
             bindings = <&kp BACKSPACE>, <&kp DELETE>;
 
             #binding-cells = <0>;
-            mods = <(MOD_RSFT|MOD_LALT)>;
+            mods = <(MOD_RSFT|MOD_LSFT)>;
         };
 
         shift_caps_word: shift_caps_word {
@@ -128,19 +128,9 @@
     combos {
         compatible = "zmk,combos";
 
-        escape {
-            bindings = <&kp ESCAPE>;
-            key-positions = <13 29>;
-        };
-
         perc {
             bindings = <&kp PERCENT>;
             key-positions = <5 17>;
-        };
-
-        equal {
-            bindings = <&kp EQUAL>;
-            key-positions = <28 16>;
         };
 
         dollar {
