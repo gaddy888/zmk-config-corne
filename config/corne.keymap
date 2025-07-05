@@ -45,7 +45,7 @@
             bindings = <&kp LEFT_PARENTHESIS>, <&kp LESS_THAN>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         paragreat: paragreat {
@@ -54,7 +54,7 @@
             bindings = <&kp RIGHT_PARENTHESIS>, <&kp GREATER_THAN>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         shift_tolayer: shift_tolayer {
