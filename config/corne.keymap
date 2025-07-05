@@ -291,8 +291,8 @@
             >;
         };
 
-        NAV {
-            display-name = "NavNum";
+        NAV_SYM {
+            display-name = "NavSymbols";
 
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
@@ -301,10 +301,10 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&kp ESC     &kp N1            &kp N2        &kp N3        &kp N4           &kp N5           &kp N6   &kp N7  &kp N8        &kp N9  &kp N0      &trans
-&caps_word  &sk LEFT_CONTROL  &sk LEFT_ALT  &kp UP_ARROW  &browsertab      &kp PAGE_UP      &none    &kp N4  &kp N5        &kp N6  &kp COMMA   &kp HOME
-&trans      &trans            &kp LEFT      &kp DOWN      &kp RIGHT_ARROW  &kp PAGE_DOWN    &kp N0   &kp N1  &kp N2        &kp N3  &kp PERIOD  &kp END
-                                            &sk LGUI      &trans           &kp SPACE        &kp RET  &trans  &sk LEFT_ALT
+&kp ESC     &kp N1            &kp N2        &kp N3        &kp N4           &kp N5           &kp N6     &kp N7     &kp N8         &kp N9            &kp N0             &trans
+&caps_word  &sk LEFT_CONTROL  &sk LEFT_ALT  &kp UP_ARROW  &browsertab      &kp PAGE_UP      &kp MINUS  &kp EQUAL  &kp SLASH      &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp HOME
+&trans      &trans            &kp LEFT      &kp DOWN      &kp RIGHT_ARROW  &kp PAGE_DOWN    &kp UNDER  &kp PLUS   &kp BACKSLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp END
+                                            &sk LGUI      &trans           &kp SPACE        &kp RET    &trans     &sk LEFT_ALT
             >;
         };
 
