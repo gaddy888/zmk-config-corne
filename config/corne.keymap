@@ -284,15 +284,15 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&kp GRAVE       &kp Q               &kp W           &kp E           &kp R  &kp T        &kp Y    &kp U               &kp I            &kp O            &kp P                   &backspace_delete
-&kp TAB         &hm LEFT_CONTROL A  &hm LEFT_ALT S  &hm LEFT_GUI D  &kp F  &kp G        &kp H    &kp J               &hm K RIGHT_GUI  &hm RIGHT_ALT L  &hm RIGHT_CONTROL SEMI  &kp SQT
-&kp LEFT_SHIFT  &hm CAPSLOCK Z      &kp X           &kp C           &kp V  &kp B        &kp N    &kp M               &kp COMMA        &kp DOT          &hm CAPSLOCK FSLH       &kp RSHFT
-                                                    &kp LGUI        &mo 1  &kp SPACE    &kp RET  &lt 2 LEFT_CONTROL  &kp LEFT_ALT
+&kp GRAVE       &kp Q               &kp W           &kp E           &kp R  &kp T        &kp Y                   &kp U      &kp I            &kp O            &kp P                   &backspace_delete
+&kp TAB         &hm LEFT_CONTROL A  &hm LEFT_ALT S  &hm LEFT_GUI D  &kp F  &kp G        &kp H                   &kp J      &hm K RIGHT_GUI  &hm RIGHT_ALT L  &hm RIGHT_CONTROL SEMI  &kp SQT
+&kp LEFT_SHIFT  &hm CAPSLOCK Z      &kp X           &kp C           &kp V  &kp B        &kp N                   &kp M      &kp COMMA        &kp DOT          &hm CAPSLOCK FSLH       &kp RSHFT
+                                                    &kp LGUI        &mo 1  &kp SPACE    &hm LEFT_CONTROL ENTER  &lt 2 TAB  &kp LEFT_ALT
             >;
         };
 
-        NAV_SYM {
-            display-name = "NavSymbols";
+        NUM_SYM {
+            display-name = "Numbers_Symbols";
 
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
@@ -301,15 +301,15 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&kp ESC     &kp N1            &kp N2        &kp N3        &kp N4           &kp N5           &kp N6     &kp N7     &kp N8         &kp N9            &kp N0             &trans
-&caps_word  &sk LEFT_CONTROL  &sk LEFT_ALT  &kp UP_ARROW  &browsertab      &kp PAGE_UP      &kp MINUS  &kp EQUAL  &kp SLASH      &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp HOME
-&trans      &trans            &kp LEFT      &kp DOWN      &kp RIGHT_ARROW  &kp PAGE_DOWN    &kp UNDER  &kp PLUS   &kp BACKSLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp END
-                                            &sk LGUI      &trans           &kp SPACE        &kp RET    &trans     &sk LEFT_ALT
+&kp ESC     &kp N1            &kp N2        &kp N3    &kp N4           &kp N5           &kp N6     &kp N7     &kp N8         &kp N9            &kp N0             &trans
+&caps_word  &kp NUMBER_6      &kp N7        &kp N8    &kp N9           &kp N0           &kp MINUS  &kp EQUAL  &kp SLASH      &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp HOME
+&trans      &sk LEFT_CONTROL  &sk LEFT_ALT  &kp LEFT  &kp RIGHT_ARROW  &kp PAGE_DOWN    &kp UNDER  &kp PLUS   &kp BACKSLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp END
+                                            &sk LGUI  &trans           &kp SPACE        &trans     &trans     &sk LEFT_ALT
             >;
         };
 
-        SYM {
-            display-name = "Symbols";
+        SYM_NAV {
+            display-name = "Symbols_Navigation";
 
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
@@ -318,10 +318,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp EXCL          &kp AT          &kp HASH        &kp DLLR         &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK      &paraless         &paragreat         &trans
-&trans  &kp LEFT_CONTROL  &kp LEFT_ALT    &kp UP_ARROW    &trans           &kp GRAVE    &kp MINUS  &kp EQUAL  &kp SLASH      &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans
-&trans  &trans            &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp TILDE    &kp UNDER  &kp PLUS   &kp BACKSLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
-                                          &kp LGUI        &trans           &kp SPACE    &kp RET    &trans     &trans
+&trans  &kp EXCL          &kp AT         &kp HASH        &kp DLLR         &kp PRCNT     &kp PAGE_UP    &kp AMPS  &kp UP_ARROW    &browsertab       &kp HOME           &trans
+&trans  &kp CARET         &kp AMPERSAND  &kp STAR        &paraless        &paragreat    &kp PAGE_DOWN  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT         &kp END            &trans
+&trans  &sk LEFT_CONTROL  &sk LEFT_ALT   &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp GRAVE     &kp UNDER      &kp PLUS  &kp BACKSLASH   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
+                                         &kp LGUI        &trans           &trans        &trans         &trans    &trans
             >;
         };
 
@@ -331,7 +331,7 @@
 &trans  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5            &kp F6  &kp F7           &kp F8         &kp F9        &kp F10            &bt BT_CLR
 &trans  &kp F11       &kp F12       &trans        &trans        &studio_unlock    &trans  &kp RIGHT_SHIFT  &kp RIGHT_GUI  &kp LEFT_ALT  &kp RIGHT_CONTROL  &bt BT_CLR_ALL
 &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4      &trans  &trans           &trans         &trans        &bootloader        &trans
-                                    &kp LEFT_GUI  &trans        &trans            &trans  &trans           &kp RIGHT_ALT
+                                    &kp LEFT_GUI  &trans        &trans            &trans  &trans           &trans
             >;
         };
 
