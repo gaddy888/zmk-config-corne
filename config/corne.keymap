@@ -301,10 +301,10 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&kp ESC     &kp N1            &kp N2        &kp N3    &kp N4           &kp N5           &kp N6          &kp N7     &kp N8         &kp N9            &kp N0             &trans
-&caps_word  &kp NUMBER_6      &kp N7        &kp N8    &kp N9           &kp N0           &kp MINUS       &kp EQUAL  &kp SLASH      &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp HOME
-&trans      &sk LEFT_CONTROL  &sk LEFT_ALT  &kp LEFT  &kp RIGHT_ARROW  &kp PAGE_DOWN    &kp UNDERSCORE  &kp PLUS   &kp BACKSLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp END
-                                            &sk LGUI  &trans           &kp SPACE        &trans          &trans     &sk LEFT_ALT
+&kp ESC     &kp N1            &kp N2        &kp N3           &kp N4         &kp N5         &kp N6          &kp N7     &kp N8         &kp N9            &kp N0             &trans
+&caps_word  &kp NUMBER_6      &kp N7        &kp N8           &kp N9         &kp N0         &kp MINUS       &kp EQUAL  &kp SLASH      &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp HOME
+&trans      &sk LEFT_CONTROL  &sk LEFT_ALT  &kp KP_ASTERISK  &kp KP_DIVIDE  &browsertab    &kp UNDERSCORE  &kp PLUS   &kp BACKSLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp END
+                                            &sk LGUI         &trans         &kp SPACE      &trans          &trans     &sk LEFT_ALT
             >;
         };
 
@@ -320,7 +320,7 @@
             bindings = <
 &trans  &kp EXCL          &kp AT         &kp HASH        &kp DLLR         &kp PRCNT     &kp PAGE_UP    &kp AMPS  &kp UP_ARROW    &browsertab       &kp HOME           &trans
 &trans  &kp CARET         &kp AMPERSAND  &kp STAR        &paraless        &paragreat    &kp PAGE_DOWN  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT         &kp END            &trans
-&trans  &sk LEFT_CONTROL  &sk LEFT_ALT   &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp GRAVE     &kp UNDER      &kp PLUS  &kp BACKSLASH   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
+&trans  &sk LEFT_CONTROL  &sk LEFT_ALT   &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp TILDE     &kp UNDER      &kp PLUS  &kp BACKSLASH   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
                                          &kp LGUI        &trans           &trans        &trans         &trans    &trans
             >;
         };
