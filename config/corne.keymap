@@ -263,9 +263,16 @@
             key-positions = <24 37>;
         };
 
-        to_mouse_num {
+        to_mouse_num_right {
             bindings = <&mo 4>;
             key-positions = <23 35>;
+            require-prior-idle-ms = <200>;
+        };
+
+        to_mouse_num_left {
+            bindings = <&mo 4>;
+            key-positions = <24 12>;
+            require-prior-idle-ms = <200>;
         };
     };
 
