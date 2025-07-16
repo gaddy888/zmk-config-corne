@@ -87,6 +87,8 @@
             label = "PERIOD_COMMA";
             #binding-cells = <0>;
             bindings = <&kp PERIOD>, <&kp COMMA>;
+
+            tapping-term-ms = <400>;
         };
     };
 
