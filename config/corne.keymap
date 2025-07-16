@@ -346,7 +346,7 @@
             display-name = "MouseNum";
             bindings = <
 &trans  &trans     &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &msc SCRL_UP      &kp KP_MULTIPLY  &kp N7        &kp N8        &kp N9        &kp KP_PLUS      &trans
-&trans  &kp LCTRL  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN    &kp KP_DIVIDE    &kp N4        &kp N5        &kp NUMBER_6  &kp KP_SUBTRACT  &trans
+&trans  &kp LCTRL  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN    &kp KP_DIVIDE    &kp N4        &kp N5        &kp NUMBER_6  &kp KP_SUBTRACT  &kp KP_EQUAL
 &trans  &trans     &msc SCRL_LEFT  &mkp MB3        &msc SCRL_RIGHT  &trans            &kp KP_NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD       &trans
                                    &kp LEFT_GUI    &trans           &trans            &trans           &trans        &kp LEFT_ALT
             >;
