@@ -148,16 +148,6 @@
             key-positions = <2 14>;
         };
 
-        copy {
-            bindings = <&kp K_COPY>;
-            key-positions = <28 27>;
-        };
-
-        paste {
-            bindings = <&kp K_PASTE>;
-            key-positions = <26 27>;
-        };
-
         star {
             bindings = <&kp STAR>;
             key-positions = <8 20>;
@@ -265,9 +255,16 @@
             require-prior-idle-ms = <200>;
         };
 
-        to_mouse_num {
+        to_mouse_num_R {
             bindings = <&mo 4>;
             key-positions = <23 35>;
+            require-prior-idle-ms = <200>;
+        };
+
+        to_mouse_num_L {
+            bindings = <&mo 4>;
+            key-positions = <12 24>;
+            require-prior-idle-ms = <200>;
         };
     };
 
