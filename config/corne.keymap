@@ -240,9 +240,8 @@
         to_numpad {
             bindings = <&tog 4>;
             key-positions = <35 40>;
-            require-prior-idle-ms = <300>;
-            slow-release;
-            timeout-ms = <150>;
+            require-prior-idle-ms = <400>;
+            timeout-ms = <30>;
         };
 
         pipe {
@@ -263,9 +262,8 @@
         to_layer5 {
             bindings = <&tog 5>;
             key-positions = <24 37>;
-            require-prior-idle-ms = <300>;
-            slow-release;
-            timeout-ms = <150>;
+            require-prior-idle-ms = <400>;
+            timeout-ms = <30>;
         };
 
         to_mouse_num_R {
