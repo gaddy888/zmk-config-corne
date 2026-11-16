@@ -109,7 +109,7 @@
         hrm_tile_left: hrm_tile_left {
             compatible = "zmk,behavior-hold-tap";
             label = "HRM_TILE_LEFT";
-            #binding-cells = <1>;
+            #binding-cells = <2>;
             tapping-term-ms = <300>;
             quick-tap-ms = <150>;
             flavor = "balanced";
@@ -122,7 +122,7 @@
         hrm_tile_right: hrm_tile_right {
             compatible = "zmk,behavior-hold-tap";
             label = "HRM_TILE_RIGHT";
-            #binding-cells = <1>;
+            #binding-cells = <2>;
             tapping-term-ms = <300>;
             quick-tap-ms = <150>;
             flavor = "balanced";
