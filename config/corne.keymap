@@ -164,15 +164,14 @@
         tile_left: tile_left {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            // macOS ignores a very short Caps Lock press, so hold it before tapping the arrow.
-            wait-ms = <200>;
+            // Magnet shortcuts: Ctrl+Option+Cmd+Left / Right (set in Magnet, so Mac only).
             bindings =
                 <&macro_press>,
-                <&kp LEFT_CONTROL &kp CAPSLOCK>,
+                <&kp LEFT_CONTROL &kp LEFT_ALT &kp LEFT_GUI>,
                 <&macro_tap>,
                 <&kp LEFT>,
                 <&macro_release>,
-                <&kp LEFT_CONTROL &kp CAPSLOCK>;
+                <&kp LEFT_CONTROL &kp LEFT_ALT &kp LEFT_GUI>;
 
             label = "TILE_LEFT";
         };
@@ -180,15 +179,14 @@
         tile_right: tile_right {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            // macOS ignores a very short Caps Lock press, so hold it before tapping the arrow.
-            wait-ms = <200>;
+            // Magnet shortcuts: Ctrl+Option+Cmd+Left / Right (set in Magnet, so Mac only).
             bindings =
                 <&macro_press>,
-                <&kp LEFT_CONTROL &kp CAPSLOCK>,
+                <&kp LEFT_CONTROL &kp LEFT_ALT &kp LEFT_GUI>,
                 <&macro_tap>,
                 <&kp RIGHT>,
                 <&macro_release>,
-                <&kp LEFT_CONTROL &kp CAPSLOCK>;
+                <&kp LEFT_CONTROL &kp LEFT_ALT &kp LEFT_GUI>;
 
             label = "TILE_RIGHT";
         };
